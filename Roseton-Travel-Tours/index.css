@@ -14,16 +14,14 @@ Variables
 :root {
   --action-orange: rgb(255, 141, 0);
   --font-black: rgb(33, 33, 33);
-  --font-white: rgb(253, 253, 253);
   --bg-beige: rgb(255, 246, 232);
   --bg-brown: rgb(92, 71, 45);
   --ff-hdg: 'Fira Sans', sans-serif;
   --ff-body: 'Poppins', sans-serif;
   --spacing: 0.1rem;
   --radius: 0.5rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1280px;
+  --max-width: 2400px;
 }
 /*
 =============== 
@@ -47,7 +45,6 @@ body {
   background: var(--bg-beige);
   color: var(--font-black);
   line-height: 1.5;
-  font-size: 0.875rem;
   max-width: var(--max-width);
 }
 ul {
@@ -65,7 +62,7 @@ button {
     border-radius: var(--radius);
     border: none;
     background-color: var(--action-orange);
-    transition: 250ms linear;
+    transition: 200ms linear;
 }
 button:hover {
     cursor:pointer;
@@ -119,7 +116,7 @@ h4 {
   h2,
   h3,
   h4 {
-    line-height: 1;
+    line-height: 1.2;
   }
 }
 
@@ -132,8 +129,8 @@ Hero Styles
 display: grid;
 grid-template-columns: 1fr 2fr 1fr;
 grid-template-rows: 1fr 2fr 1fr;
-min-height: 70vh;
-width: 100vw;
+height: 80vh;
+width: 100%;
 object-fit: contain;
 }
 .logo-wrapper {
