@@ -343,15 +343,15 @@ https://codepen.io/mcraiganthony/pen/NxGxqm?editors=1100
 }
 
 .card__image--cave {
-  background-image: url('./assets/brow_rock_cave_entrance.jpg');
+  background-image: url('./assets/brown_rock_cave_entrance.webp');
 }
 
 .card__image--river {
-  background-image: url('./assets/horseshoe_bend_card_img.jpg');
+  background-image: url('./assets/horseshoe_bend_card_img.webp');
 }
 
 .card__image--waterfall {
-  background-image: url('./assets/iceland_basalt_column_waterfall.jpg');
+  background-image: url('./assets/iceland_basalt_column_waterfall.webp');
 }
 
 .card__title {
@@ -422,7 +422,7 @@ Testimonial Section Styles
 ===============
 */
 .testimonial-wrapper {
-    background: url("./assets/blurred_bg_placeholder.jpg") no-repeat center;
+    background: url("./assets/blurred_bg_placeholder.webp") no-repeat center;
     background-size: cover;
     padding: 3rem 1rem;
 }
