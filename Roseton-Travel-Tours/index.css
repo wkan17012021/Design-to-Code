@@ -531,3 +531,29 @@ Contact Section Styles
     line-height: 1.8;
     margin-bottom: 2rem;
 }
+
+/*
+=============== 
+Animations and Effects
+===============
+*/
+
+
+
+
+@keyframes revealOnScroll {
+  from {opacity: 0; filter:blur(3px);}
+  to {opacity: 1; filter: blur(0px);}
+}
+.revealing-image {
+  	/* Create View Timeline */
+	view-timeline-name: --revealing-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the View Timeline */
+	animation: linear revealOnScroll both;
+	animation-timeline: --revealing-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
