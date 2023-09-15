@@ -538,22 +538,46 @@ Animations and Effects
 ===============
 */
 
-
-
-
 @keyframes revealOnScroll {
-  from {opacity: 0; filter:blur(3px);}
-  to {opacity: 1; filter: blur(0px);}
+  from {
+    opacity: 0; 
+    filter: blur(3px);
+    clip-path: inset(45% 20% 45% 20%);
+  }
+  to {
+    opacity: 1; 
+    filter: blur(0px);
+    clip-path: inset(0% 0% 0% 0%);
+  }
 }
 .revealing-image {
-  	/* Create View Timeline */
+  /* Create View Timeline */
 	view-timeline-name: --revealing-image;
 	view-timeline-axis: block;
-
 	/* Attach animation, linked to the View Timeline */
 	animation: linear revealOnScroll both;
 	animation-timeline: --revealing-image;
-
 	/* Tweak range when effect should run*/
 	animation-range: entry 25% cover 50%;
+}
+
+
+@keyframes slideinOnScroll {
+  from {
+    position: relative;
+    right: -200px;
+  }
+  to {
+    position: relative;
+    right: 0px;
+  }
+}
+.slide-in-card {
+	view-timeline-name: --slide-in-card;
+	view-timeline-axis: block;
+
+	animation: linear slideinOnScroll both;
+	animation-timeline: --slide-in-card;
+
+	animation-range: entry 5% cover 30%;
 }
