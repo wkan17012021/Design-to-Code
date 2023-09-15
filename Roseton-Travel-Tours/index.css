@@ -402,6 +402,10 @@ Trip Details Section Styles
 }
 .details__img_wrapper {
   overflow: hidden;
+  flex: 2 1 auto;
+  @media (min-width: 40rem) {
+    flex: 1 1 auto;
+  }
 }
 .details__img_wrapper img {
     width: 210px;
@@ -414,6 +418,12 @@ Trip Details Section Styles
 }
 .details__img_wrapper img:hover {
   transform: perspective(1000px) translate3d(0, 0, 150px);
+}
+.details__text_wrapper {
+  flex: 1 2 auto;
+  @media (min-width: 40rem) {
+    flex: 1 1 auto;
+  }
 }
 /*
 =============== 
