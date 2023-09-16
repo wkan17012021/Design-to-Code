@@ -4,4 +4,4 @@ This is a repo for translating design templates and wireframes into markup, styl
 
 ## Projects
 
-- Canva's Roseton Travel & Tours Design Template
+- Canva's Roseton Travel & Tours Design Template (pdf template design is provided in assets folder)
