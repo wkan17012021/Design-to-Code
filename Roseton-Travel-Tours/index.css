@@ -168,6 +168,7 @@ object-fit: contain;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    opacity: 0;
 }
 .hero-body {
     grid-column-start: 2;
@@ -179,6 +180,7 @@ object-fit: contain;
 .hero-title  {
     font-weight: 300;
     color: var(--bg-beige);
+    opacity: 0;
 }
 .hero-title span {
 display: block;
@@ -431,6 +433,10 @@ Testimonial Section Styles
 
 ===============
 */
+.fade-in {
+  opacity: 1;
+  transition: opacity 3000ms ease-in-out;
+} 
 .testimonial-wrapper {
     background: url("./assets/blurred_bg_placeholder.webp") no-repeat center;
     background-size: cover;
